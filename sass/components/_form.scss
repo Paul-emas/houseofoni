@@ -1,0 +1,167 @@
+.login__wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.login-box {
+    margin: 3rem auto;
+    width: 80%;
+    height: 600px;
+
+    @include respond(tab-land) {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    @include respond(tab-port) {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    &__form-container {
+        position: relative;
+        margin: 0 auto;
+        width: 50%;
+        height: 600px;
+
+        @include respond(tab-land) {
+            width: 100%;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
+    }
+
+    &__logo {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%,-10%);
+        z-index: 2;
+
+        @include respond(tab-land) {
+            top: 5%;
+        }
+
+        @include respond(tab-port) {
+            top: 5%;
+        }
+
+        & img {
+            height: 15vh;
+        }
+    }
+
+    &__form {
+        position: relative;
+        top: 18rem;
+        width: 300px;
+        height: 360px;
+        border: none;
+        margin: 0 auto;
+        box-shadow: 0 2px 5px #3b3b3b;
+        border-radius: 8px;
+        padding: 2.5rem;
+        background-color: $color-white;
+        padding-bottom: 3rem;
+
+        @include respond(phone) {
+            width: 260px;
+            top: 15rem;
+        }
+
+        &-content {
+            width: 100%;
+            height: 50%;
+        }
+    }  
+    
+    &__caption {
+        position: relative;
+        top: 1rem;
+        width: 100%;
+        text-align: center;
+
+        & h1 {
+            margin-bottom: 2rem;
+        }
+
+        & p {
+            line-height: 2;
+        }
+
+        & span {
+            color: red;
+            font-weight: 700;
+            opacity: 0;
+        }
+    }   
+
+    &__email {
+        margin-top: .5em;
+    }
+}
+
+.form {
+    display: flex;
+    justify-content: space-around;
+    display: block;
+
+    &__input-container {
+        padding: 5px;
+        margin-bottom: 2rem;
+        border: 1px solid #d3d3d3;
+        border-radius: 5px;
+        transition: all .5s;    
+
+        &-input {
+            position: relative;
+            width: 70%;
+            padding: 5px;
+            margin: 0 auto;
+            left: 5%;
+            outline: none;
+            border: none;        
+        }
+
+    }
+
+    &__eyes {
+        margin-left: 2rem;
+        color: #d3d3d3;
+        cursor: pointer;
+        transition: all .2s;
+
+        &:hover {
+            color: $color-primary-dark;
+            transform: scale(1.2);
+        }
+
+        &:active {
+            transform: translateY(5px);
+        }
+    }
+
+    &__submit-btn {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        outline: none;
+        background-color: $color-primary;
+        color: $color-white;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:active {
+            transform: translateY(3px);
+            outline: none;
+        }
+    }
+}
+
+.form__input-container-input:focus ~ .form__input-container {
+    border: 1px solid $color-primary;
+}

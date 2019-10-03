@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="sass/main.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500"
+        rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="boostrap/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="boostrap/js/bootstrap.min.js"></script>
+    <title>HouseofOni</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- Create Event Dropdown -->
+        <div class="header__dropdown" id="popup1">
+            <div class="header__dropdown-box">
+                <div class="popup-close">
+                    <a href="#"><i class="fa fa-times"></i></a>
+                </div>
+                <div class="header__dropdown-box-content">
+                    <h3>Create Event</h3>
+
+                    <div class="container header__details">
+                        <div class="col-md-12 header__details-grid header__details-grid--0">
+                            <h5 class="header__details-grid--title">Title</h5>
+                            <form action="#" method="get">
+                                <input type="text" placeholder="Hikoot live listenening party"
+                                    class="header__form header__form--title">
+                            </form>
+                        </div>
+                        <div class="col-md-12 header__details-grid header__details-grid--3">
+                            <div class="col-md-5 header__details-grid--data">
+                                <h5 class="header__details-grid--title bold">Day</h5>
+                                <form action="#" method="get" class="form__box">
+                                    <input type="text" placeholder="13th November 2017"
+                                        class="header__form header__form--title header__form--title--1">
+                                    <div class="input__append">
+                                        <i class="fal fa-calendar"></i>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-2 header__details-grid--data">
+                                <h5 class="header__details-grid--title bold">Hour</h5>
+                                <form action="#" method="get">
+                                    <input type="number" placeholder="10" maxlength="4"
+                                        class="header__form header__form--title header__form--title--2">
+                                </form>
+                            </div>
+                            <div class="col-md-2 header__details-grid--data">
+                                <h5 class="header__details-grid--title bold">Minute</h5>
+                                <form action="#" method="get">
+                                    <input type="number" placeholder="15" maxlength="3"
+                                        class="header__form header__form--title header__form--title--2">
+                                </form>
+                            </div>
+                            <div class="col-md-3 header__details-grid--data">
+                                <h5 class="header__details-grid--title bold">Duration</h5>
+                                <form action="#" method="get">
+                                    <select class="header__form--select" type="select">
+                                        <option>2h 45m</option>
+                                        <option>3h 45m</option>
+                                        <option>4h 45m</option>
+                                        <option>5h 45m</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="header__caption">
+                                <p><i class="fa fa-check"></i> This event will take place on the 13th of November 2017
+                                    from 10:15am until 1:00pm</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 header__details-grid header__details-grid--0">
+                            <h5 class="header__details-grid--title">Location</h5>
+                            <form action="#" method="get">
+                                <input type="text" placeholder="Store Kongensgade 66, Ikeja CRA"
+                                    class="header__form header__form--title">
+                            </form>
+                        </div>
+                        <div class="col-md-12 header__details-grid header__details-grid--4">
+                            <h5 class="header__details-grid--title">Upload Cover Photo</h5>
+                            <div class="header__upload">
+                                <p><i class="fa fa-file"></i> Burna Boy <span>Remove</span></p>
+                                <button class="Btn Btn-primary-light header__upload--btn">&#43; Photo</button>
+                            </div>
+                        </div>
+                        <div class="col-md-12 header__details-grid header__details-grid--1">
+                            <h5 class="header__details-grid--title bold">Description</h5>
+                            <textarea class="header__textarea" rows="5" name="text"></textarea>
+                        </div>
+                        <div class="col-md-12 header__details-grid header__details-grid--2">
+                            <button class="Btn Btn-primary Btn-primary-light header__createBtn">Create Event</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="check__dropdown header__dropdown" id="popup2">
+            <div class="check__dropdown-box header__dropdown-box">
+                <div class="popup-close">
+                    <a href="#"><i class="fa fa-times"></i></a>
+                </div>
+                <div class="header__dropdown-box-content">
+                    <h3>Ticket Info</h3>
+
+                    <div class="check__dropdown-detail">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Name</p>
+                                <h4>Ukauwa David Nwazuo</h4>
+                                <h3>Burnaboy Listening Party</h3>
+
+                                <div class="col-md-6">
+                                    <p><i class="fal fa-map-marker"></i> Secret Gardens</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><i class="fal fa-calendar"></i> 15th July 2018</p>
+                                </div>
+
+                                <div class="QR-box">
+                                    <img src="images/QR.png" alt="QR-CODE">
+                                </div>
+
+                                <div class="tracker-box">
+                                    <p>Ticket ID <br> <span>234RFD2</span></p>
+                                </div>
+
+                                <div class="check__dropdown--btn">
+                                    <button href="#"
+                                        class="Btn Btn-primary Btn-primary-light header__createBtn">Check-out</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="header__dropdown notification" id="popup3">
+            <div class="header__dropdown-box notification-box">
+                <div class="popup-close">
+                    <a href="#"><i class="fa fa-times"></i></a>
+                </div>
+
+                <div class="header__dropdown-box-content">
+                    <h3>Create Notification</h3>
+
+                    <div class="container notification__details header__details">
+                        <div class="col-md-12 header__details-grid header__details-grid--0">
+                            <h5 class="header__details-grid--title notification__des">Title</h5>
+                            <form action="#" method="get">
+                                <input type="text" placeholder="Hikoot live listenening party"
+                                    class="header__form header__form--title">
+                            </form>
+                        </div>
+
+                        <div class="col-md-12 header__details-grid notification__details-grid">
+                            <h5 class="header__details-grid--title bold">Description</h5>
+                            <textarea class="header__textarea" rows="5" name="text"></textarea>
+                        </div>
+
+                        <div class="col-md-12 header__details-grid">
+                            <form action="" method="get">
+                                <div class="notification__form__group"><i class="fal fa-clock"></i><span>Schedule</span>
+                                </div>
+                                <input type="text" placeholder="sun, 11th Aug - 12:30PM"
+                                    class="header__form header__form--title notification__form">
+                            </form>
+                        </div>
+                        <div class="check__dropdown--btn">
+                            <button href="#" class="Btn Btn-primary Btn-primary-light header__createBtn">Create
+                                Notification</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="header__dropdown notification payment" id="popup4">
+            <div class="header__dropdown-box notification-box">
+                <div class="popup-close">
+                    <a href="#"><i class="fa fa-times"></i></a>
+                </div>
+
+                <div class="header__dropdown-box-content">
+                    <h3>New Payment</h3>
+
+                    <div class="container notification__details header__details">
+                        <div class="col-md-12 header__details-grid header__details-grid--0">
+                            <h5 class="header__details-grid--title notification__des">Event</h5>
+                            <form action="#" method="get">
+                                <select class="header__form--select" type="select">
+                                    <option>Hikoot live listenening party</option>
+                                    <option>Hikoot live listenening party 1</option>
+                                    <option>Hikoot live listenening party 2</option>
+                                    <option>Hikoot live listenening party 3</option>
+                                </select>
+                            </form>
+                        </div>
+
+                        <div class="col-md-12 header__details-grid header__details-grid--0">
+                            <h5 class="header__details-grid--title notification__des">Name</h5>
+                            <form action="#" method="get">
+                                <input type="text" placeholder="ukauwa david" class="header__form header__form--title">
+                            </form>
+                        </div>
+
+                        <div class="col-md-12 header__details-grid">
+                            <h5 class="header__details-grid--title notification__des">Event</h5>
+                            <form action="#" method="get">
+                                <select class="header__form--select" type="select">
+                                    <option>cash transfer</option>
+                                    <option>Visa</option>
+                                    <option>Paypal</option>
+                                </select>
+                            </form>
+                        </div>
+
+                        <div class="col-md-12 header__details-grid">
+                            <h5 class="header__details-grid--title bold">Price</h5>
+                            <form action="#" method="get" class="form__box">
+                                <input type="number" placeholder="."
+                                    class="header__form header__form--title header__form--title--1">
+                                <div class="input__append">
+                                    &#8358;
+                                </div>
+                            </form>
+                        </div>
+                        <div class="check__dropdown--btn">
+                            <button href="#" class="Btn Btn-primary Btn-primary-light header__createBtn">Add
+                                Payment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main>
+
+            <div class="sidebar app-content" id="sideBar">
+                <i class="fal fa-times sidebar__closeBtn" onclick="closeNav()"></i>
+                <div class="sidebar__logo">
+                    <img src="images/logo.png" alt="logo" data-aos="fade-in">
+                </div>
+
+                <!-- Tabs -->
+                <div class="sidebar__tab">
+                    <ul class="tab">
+                        <li class="tablinks active" data-aos="fade-up" data-aos-delay="50"
+                            onclick="openCity(event, 'tab-0')" id="defaultOpen">Events</li>
+                        <li class="tablinks" data-aos="fade-up" data-aos-delay="150" onclick="openCity(event, 'tab-1')">
+                            Checklist</li>
+                        <li class="tablinks" data-aos="fade-up" data-aos-delay="250" onclick="openCity(event, 'tab-2')">
+                            Notification</li>
+                        <li class="tablinks" data-aos="fade-up" data-aos-delay="350" onclick="openCity(event, 'tab-3')">
+                            Payment</li>
+                        <li class="tablinks" data-aos="fade-up" data-aos-delay="450" onclick="openCity(event, 'tab-4')">
+                            Permissions</li>
+                        <li class="tablinks" data-aos="fade-up" data-aos-delay="550" onclick="openCity(event, 'tab-5')">
+                            Customers</li>
+                        <li class="tablinks" data-aos="fade-up" data-aos-delay="650" onclick="openCity(event, 'tab-6')">
+                            Polls</li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="main-sec app-content">
+                <div class="section-event">
+                    <nav class="topnav">
+                        <i class="fal fa-bars toggle-sidebar" id="toggleSidebar" onclick="openNav()"></i>
+                        <div class="col-md-8 topnav__grid">
+                            <div class="topnav__content-box">
+                                <i class="fal fa-search topnav__search-icon"></i>
+                                <form action="#" method="get">
+                                    <input type="text" placeholder="Find a user, team, meeting..."
+                                        class="topnav__search-bar">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-4 topnav__grid">
+
+                            <div class="topnav__content-box">
+                                <i class="fal fa-bell topnav__search-icon dropdown-toggle" data-toggle="dropdown"></i>
+                                <div class="topnav__user-name">dukauwa.dul@gmail.com</div>
+                                <div class="topnav__user-img"></div>
+                                <div class="topnav__user-notification dropdown-menu">
+                                    <ul>
+                                        <li><a href="">There is a new event around you <br><span>03:22PM</span></a></li>
+                                        <li><a href="">There is a new event around you <br><span>03:22PM</span></a></li>
+                                        <li><a href="">There is a new event around you <br><span>03:22PM</span></a></li>
+                                        <li><a href="">There is a new event around you <br><span>03:22PM</span></a></li>
+                                        <li><a href="">There is a new event around you <br><span>03:22PM</span></a></li>
+                                        <li><a href="">There is a new event around you <br><span>03:22PM</span></a></li>
+                                        <li><a href="">There is a new event around you <br><span>03:22PM</span></a></li>
+                                        <li><a href="">There is a new event around you <br><span>03:22PM</span></a></li>
+                                        <li><a href="">There is a new event around you <br><span>03:22PM</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+
+
+                    <div class="tabcontent tabcontent-active" id="tab-0">
+
+                        <header class="header">
+                            <div class="header__title">
+                                <h1>Events</h1>
+                                <a href="#popup1" class="Btn Btn-primary header__Btn dropdown-toggle"
+                                    data-aos="zoom-out" data-aos-delay="250">&#43;
+                                    Create Event</a>
+
+                            </div>
+                        </header>
+
+
+
+                        <main>
+
+                            <section class="section-content">
+                                <div class="event">
+                                    <div class="event-box">
+                                        <div class="event__item" data-aos-delay="50" data-aos="fade-up">
+                                            <div class="event__item-content event__item-content-img">
+                                                <img src="images/invitation-4.png" alt="invitation">
+                                            </div>
+                                            <div class="event__item-content">
+                                                <div class="col-md-12 event__item__context">
+                                                    <div class="event__item__context-info">
+                                                        <i class="event__optionBtn fa fa-ellipsis-v"></i>
+                                                        <h6>Title</h6>
+                                                        <h3>Burnaboy Listening Party</h3>
+                                                        <p><i class="fal fa-map-marker"></i> Secret Gardens</p>
+                                                        <p><i class="fal fa-calendar"></i> 15th July 2019</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 event__item__context">
+                                                    <div class="event__description">
+                                                        <p>Burna Boy has announced plans for a major headline tour. "The
+                                                            African Giant Returns Tour" begins august 9th at Rebel in
+                                                            Toronto and then travels through San Francisco plus
+                                                            international dates.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="event__item" data-aos-delay="50" data-aos="fade-up">
+                                            <div class="event__item-content event__item-content-img">
+                                                <img src="images/invitation-4.png" alt="invitation">
+                                            </div>
+                                            <div class="event__item-content">
+                                                <div class="col-md-12 event__item__context">
+                                                    <div class="event__item__context-info">
+                                                        <i class="event__optionBtn fa fa-ellipsis-v"></i>
+                                                        <h6>Title</h6>
+                                                        <h3>Burnaboy Listening Party</h3>
+                                                        <p><i class="fal fa-map-marker"></i> Secret Gardens</p>
+                                                        <p><i class="fal fa-calendar"></i> 15th July 2019</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 event__item__context">
+                                                    <div class="event__description">
+                                                        <p>Burna Boy has announced plans for a major headline tour. "The
+                                                            African Giant Returns Tour" begins august 9th at Rebel in
+                                                            Toronto and then travels through San Francisco plus
+                                                            international dates.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="event-box">
+                                            <div class="event__item" data-aos-delay="50" data-aos="fade-up">
+                                                <div class="event__item-content event__item-content-img">
+                                                    <img src="images/invitation-4.png" alt="invitation">
+                                                </div>
+                                                <div class="event__item-content">
+                                                    <div class="col-md-12 event__item__context">
+                                                        <div class="event__item__context-info">
+                                                            <i class="event__optionBtn fa fa-ellipsis-v"></i>
+                                                            <h6>Title</h6>
+                                                            <h3>Burnaboy Listening Party</h3>
+                                                            <p><i class="fal fa-map-marker"></i> Secret Gardens</p>
+                                                            <p><i class="fal fa-calendar"></i> 15th July 2019</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 event__item__context">
+                                                        <div class="event__description">
+                                                            <p>Burna Boy has announced plans for a major headline tour.
+                                                                "The
+                                                                African Giant Returns Tour" begins august 9th at Rebel
+                                                                in
+                                                                Toronto and then travels through San Francisco plus
+                                                                international dates.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="event__item" data-aos-delay="50" data-aos="fade-up">
+                                                <div class="event__item-content event__item-content-img">
+                                                    <img src="images/invitation-4.png" alt="invitation">
+                                                </div>
+                                                <div class="event__item-content">
+                                                    <div class="col-md-12 event__item__context">
+                                                        <div class="event__item__context-info">
+                                                            <i class="event__optionBtn fa fa-ellipsis-v"></i>
+                                                            <h6>Title</h6>
+                                                            <h3>Burnaboy Listening Party</h3>
+                                                            <p><i class="fal fa-map-marker"></i> Secret Gardens</p>
+                                                            <p><i class="fal fa-calendar"></i> 15th July 2019</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 event__item__context">
+                                                        <div class="event__description">
+                                                            <p>Burna Boy has announced plans for a major headline tour.
+                                                                "The
+                                                                African Giant Returns Tour" begins august 9th at Rebel
+                                                                in
+                                                                Toronto and then travels through San Francisco plus
+                                                                international dates.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="event-box">
+                                                <div class="event__item" data-aos-delay="50" data-aos="fade-up">
+                                                    <div class="event__item-content event__item-content-img">
+                                                        <img src="images/invitation-4.png" alt="invitation">
+                                                    </div>
+                                                    <div class="event__item-content">
+                                                        <div class="col-md-12 event__item__context">
+                                                            <div class="event__item__context-info">
+                                                                <i class="event__optionBtn fa fa-ellipsis-v"></i>
+                                                                <h6>Title</h6>
+                                                                <h3>Burnaboy Listening Party</h3>
+                                                                <p><i class="fal fa-map-marker"></i> Secret Gardens</p>
+                                                                <p><i class="fal fa-calendar"></i> 15th July 2019</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 event__item__context">
+                                                            <div class="event__description">
+                                                                <p>Burna Boy has announced plans for a major headline
+                                                                    tour.
+                                                                    "The
+                                                                    African Giant Returns Tour" begins august 9th at
+                                                                    Rebel
+                                                                    in
+                                                                    Toronto and then travels through San Francisco plus
+                                                                    international dates.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="event__item" data-aos-delay="50" data-aos="fade-up">
+                                                    <div class="event__item-content event__item-content-img">
+                                                        <img src="images/invitation-4.png" alt="invitation">
+                                                    </div>
+                                                    <div class="event__item-content">
+                                                        <div class="col-md-12 event__item__context">
+                                                            <div class="event__item__context-info">
+                                                                <i class="event__optionBtn fa fa-ellipsis-v"></i>
+                                                                <h6>Title</h6>
+                                                                <h3>Burnaboy Listening Party</h3>
+                                                                <p><i class="fal fa-map-marker"></i> Secret Gardens</p>
+                                                                <p><i class="fal fa-calendar"></i> 15th July 2019</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 event__item__context">
+                                                            <div class="event__description">
+                                                                <p>Burna Boy has announced plans for a major headline
+                                                                    tour.
+                                                                    "The
+                                                                    African Giant Returns Tour" begins august 9th at
+                                                                    Rebel
+                                                                    in
+                                                                    Toronto and then travels through San Francisco plus
+                                                                    international dates.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                            </section>
+
+                        </main>
+
+                    </div>
+
+
+                    <div class="tabcontent" id="tab-1">
+
+                        <header class="header">
+                            <div class="header__title">
+                                <h1>Checklist</h1>
+                                <a href="#" class="Btn Btn-primary header__Btn dropdown-toggle" data-aos="zoom-out"
+                                    data-aos-delay="250">&#43;
+                                    New Check-in</a>
+
+                            </div>
+                        </header>
+
+
+
+                        <main>
+
+                            <div class="section-content">
+                                <div class="check">
+                                    <div class="check__item" da>
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Name</h6>
+                                                <p>Ukauwa David Nwazuo</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Ticket ID</h6>
+                                                <p>234RD2</p>
+                                            </div>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Email Address</h6>
+                                                <p>dukauwa.dul@gmail.com</p>
+                                            </div>
+                                            <div class="col-md-4 check__item--grid check__item--grid--1">
+                                                <a href="#popup2" class="Btn Btn-primary check-out-btn">Check-Out</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="check__item" da>
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Name</h6>
+                                                <p>Ukauwa David Nwazuo</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Ticket ID</h6>
+                                                <p>234RD2</p>
+                                            </div>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Email Address</h6>
+                                                <p>dukauwa.dul@gmail.com</p>
+                                            </div>
+                                            <div class="col-md-4 check__item--grid">
+                                                <a href="#popup2" class="Btn Btn-primary check-out-btn">Check-Out</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                    <div class="check__item" da>
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Name</h6>
+                                                <p>Ukauwa David Nwazuo</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Ticket ID</h6>
+                                                <p>234RD2</p>
+                                            </div>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Email Address</h6>
+                                                <p>dukauwa.dul@gmail.com</p>
+                                            </div>
+                                            <div class="col-md-4 check__item--grid">
+                                                <a href="#popup2" class="Btn Btn-primary check-out-btn">Check-Out</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <div class="check__item" da>
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Name</h6>
+                                                <p>Ukauwa David Nwazuo</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Ticket ID</h6>
+                                                <p>234RD2</p>
+                                            </div>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Email Address</h6>
+                                                <p>dukauwa.dul@gmail.com</p>
+                                            </div>
+                                            <div class="col-md-4 check__item--grid">
+                                                <a href="#popup2" class="Btn Btn-primary check-out-btn">Check-Out</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="check__item" da>
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Name</h6>
+                                                <p>Ukauwa David Nwazuo</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Ticket ID</h6>
+                                                <p>234RD2</p>
+                                            </div>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Email Address</h6>
+                                                <p>dukauwa.dul@gmail.com</p>
+                                            </div>
+                                            <div class="col-md-4 check__item--grid">
+                                                <a href="#popup2" class="Btn Btn-primary check-out-btn">Check-Out</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="check__item" da>
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Name</h6>
+                                                <p>Ukauwa David Nwazuo</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Ticket ID</h6>
+                                                <p>234RD2</p>
+                                            </div>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Email Address</h6>
+                                                <p>dukauwa.dul@gmail.com</p>
+                                            </div>
+                                            <div class="col-md-4 check__item--grid">
+                                                <a href="#popup2" class="Btn Btn-primary check-out-btn">Check-Out</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </main>
+
+                    </div>
+
+
+
+                    <div class="tabcontent" id="tab-2">
+
+                        <header class="header">
+                            <div class="header__title">
+                                <h1>Notification</h1>
+                                <a href="#popup3" class="Btn Btn-primary Btn-primary--1 header__Btn dropdown-toggle"
+                                    data-aos="zoom-out" data-aos-delay="250">&#43;
+                                    New Notification</a>
+
+                            </div>
+                        </header>
+
+
+
+                        <main>
+
+                            <div class="section-content section-content__check">
+
+                                <div class="check">
+                                    <div class="check__item check__item--1">
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid check__item--grid--1">
+                                                <h6>Title</h6>
+                                                <p>Emergency</p>
+                                            </div>
+                                            <div class="col-md-9 check__item--grid">
+                                                <h6>Message</h6>
+                                                <p>Due to emergencies we won't be able to conduct the party tommorrow
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="check__item check__item--1">
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid check__item--grid--1">
+                                                <h6>Title</h6>
+                                                <p>Emergency</p>
+                                            </div>
+                                            <div class="col-md-9 check__item--grid">
+                                                <h6>Message</h6>
+                                                <p>Due to emergencies we won't be able to conduct the party
+                                                    tommorrow
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="check__item check__item--1">
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid check__item--grid--1">
+                                                <h6>Title</h6>
+                                                <p>Emergency</p>
+                                            </div>
+                                            <div class="col-md-9 check__item--grid">
+                                                <h6>Message</h6>
+                                                <p>Due to emergencies we won't be able to conduct the party
+                                                    tommorrow
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="check__item check__item--1">
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid check__item--grid--1">
+                                                <h6>Title</h6>
+                                                <p>Emergency</p>
+                                            </div>
+                                            <div class="col-md-9 check__item--grid">
+                                                <h6>Message</h6>
+                                                <p>Due to emergencies we won't be able to conduct the party
+                                                    tommorrow
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="check__item check__item--1">
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid check__item--grid--1">
+                                                <h6>Title</h6>
+                                                <p>Emergency</p>
+                                            </div>
+                                            <div class="col-md-9 check__item--grid">
+                                                <h6>Message</h6>
+                                                <p>Due to emergencies we won't be able to conduct the party
+                                                    tommorrow
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="check__item check__item--1">
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid check__item--grid--1">
+                                                <h6>Title</h6>
+                                                <p>Emergency</p>
+                                            </div>
+                                            <div class="col-md-9 check__item--grid">
+                                                <h6>Message</h6>
+                                                <p>Due to emergencies we won't be able to conduct the party
+                                                    tommorrow
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="check__item check__item--1">
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid check__item--grid--1">
+                                                <h6>Title</h6>
+                                                <p>Emergency</p>
+                                            </div>
+                                            <div class="col-md-9 check__item--grid">
+                                                <h6>Message</h6>
+                                                <p>Due to emergencies we won't be able to conduct the party
+                                                    tommorrow
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </main>
+
+                    </div>
+
+
+                    <div class="tabcontent" id="tab-3">
+
+                        <header class="header">
+                            <div class="header__title">
+                                <h1>History</h1>
+                                <a href="#popup4" class="Btn Btn-primary header__Btn dropdown-toggle"
+                                    data-aos="zoom-out" data-aos-delay="250">&#43;
+                                    New Payment</a>
+
+                            </div>
+                        </header>
+
+
+
+                        <main>
+
+                            <div class="section-content">
+                                <div class="check payment">
+                                    <div class="check__item">
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Title</h6>
+                                                <p>Burnaboy Listening Party</p>
+                                            </div>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Name</h6>
+                                                <p>Ukauwa David Nwazuo</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Ticket ID</h6>
+                                                <p>234RD2</p>
+                                            </div>
+
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Price</h6>
+                                                <p>&#8358; 1000</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Payment Option</h6>
+                                                <p>cash transfer</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="check__item">
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Title</h6>
+                                                <p>Burnaboy Listening Party</p>
+                                            </div>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Name</h6>
+                                                <p>Ukauwa David Nwazuo</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Ticket ID</h6>
+                                                <p>234RD2</p>
+                                            </div>
+
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Price</h6>
+                                                <p>&#8358; 1000</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Payment Option</h6>
+                                                <p>cash transfer</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="check__item">
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Title</h6>
+                                                <p>Burnaboy Listening Party</p>
+                                            </div>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Name</h6>
+                                                <p>Ukauwa David Nwazuo</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Ticket ID</h6>
+                                                <p>234RD2</p>
+                                            </div>
+
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Price</h6>
+                                                <p>&#8358; 1000</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Payment Option</h6>
+                                                <p>cash transfer</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="check__item">
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Title</h6>
+                                                <p>Burnaboy Listening Party</p>
+                                            </div>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Name</h6>
+                                                <p>Ukauwa David Nwazuo</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Ticket ID</h6>
+                                                <p>234RD2</p>
+                                            </div>
+
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Price</h6>
+                                                <p>&#8358; 1000</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Payment Option</h6>
+                                                <p>cash transfer</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="check__item">
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Title</h6>
+                                                <p>Burnaboy Listening Party</p>
+                                            </div>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Name</h6>
+                                                <p>Ukauwa David Nwazuo</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Ticket ID</h6>
+                                                <p>234RD2</p>
+                                            </div>
+
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Price</h6>
+                                                <p>&#8358; 1000</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Payment Option</h6>
+                                                <p>cash transfer</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="check__item">
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Title</h6>
+                                                <p>Burnaboy Listening Party</p>
+                                            </div>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Name</h6>
+                                                <p>Ukauwa David Nwazuo</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Ticket ID</h6>
+                                                <p>234RD2</p>
+                                            </div>
+
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Price</h6>
+                                                <p>&#8358; 1000</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Payment Option</h6>
+                                                <p>cash transfer</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="check__item">
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Title</h6>
+                                                <p>Burnaboy Listening Party</p>
+                                            </div>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Name</h6>
+                                                <p>Ukauwa David Nwazuo</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Ticket ID</h6>
+                                                <p>234RD2</p>
+                                            </div>
+
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Price</h6>
+                                                <p>&#8358; 1000</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Payment Option</h6>
+                                                <p>cash transfer</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </main>
+
+                    </div>
+
+                    <div class="tabcontent" id="tab-4">
+
+                        <header class="header">
+                            <div class="header__title">
+                                <h1>Permissions</h1>
+                                <a href="#popup1" class="Btn Btn-primary Btn-primary--1 header__Btn dropdown-toggle"
+                                    data-aos="zoom-out" data-aos-delay="250">&#43;
+                                    New Permit</a>
+
+                            </div>
+                        </header>
+
+
+
+                        <main>
+
+
+                        </main>
+
+                    </div>
+
+                    <div class="tabcontent" id="tab-5">
+
+                        <header class="header">
+                            <div class="header__title customer">
+                                <h1>Customers <span>/ Sarah Kent</span></h1>
+
+                            </div>
+                        </header>
+
+
+
+                        <main>
+
+                            <div class="section-content section-content__check customer">
+                                <div class="check">
+                                    <div class="check__item check__item--1 customer__item">
+                                        <div class="col-md-2 customer__item--grid">
+                                            <img src="images/user1.jpg" alt="customer--image">
+                                        </div>
+                                        <div class="check__item--content customer__item--content">                                            
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Name</h6>
+                                                <p>Sarah Kent</p>
+                                            </div>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Email</h6>
+                                                <p>sarakent@gmail.com</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Phone number</h6>
+                                                <p>+234 902 409 5111</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                    <h6>Birthday</h6>
+                                                    <p>30 - 08 - 96</p>
+                                                </div>
+                                        </div>
+
+                                        <div class="check__item--content customer__item--content customer__item--content--1">                                            
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Gender</h6>
+                                                <p>Female</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Occupation</h6>
+                                                <p>Banker</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Choice of Event</h6>
+                                                <p>Mainland</p>
+                                            </div>
+                                            <div class="col-md-4 check__item--grid">
+                                                    <h6>Event Interest</h6>
+                                                    <a href="" class="interest__btn">silent disco party</a>
+                                                    <a href="" class="interest__btn">silent yard</a>
+                                                    <a href="" class="interest__btn">pool parties</a>
+                                                </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="header__title customer customer__caption">
+                                        <h1>Payment History</h1>
+
+                                    </div>
+
+                                    <div class="check__item">
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Name</h6>
+                                                <p>Sarah Kent</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Ticket ID</h6>
+                                                <p>234RD2</p>
+                                            </div>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Price</h6>
+                                                <p>&#8358; 1000</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="check__item">
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Name</h6>
+                                                <p>Sarah Kent</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Ticket ID</h6>
+                                                <p>234RD2</p>
+                                            </div>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Price</h6>
+                                                <p>&#8358; 1000</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="check__item">
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Name</h6>
+                                                <p>Sarah Kent</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Ticket ID</h6>
+                                                <p>234RD2</p>
+                                            </div>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Price</h6>
+                                                <p>&#8358; 1000</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="check__item">
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Name</h6>
+                                                <p>Sarah Kent</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Ticket ID</h6>
+                                                <p>234RD2</p>
+                                            </div>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Price</h6>
+                                                <p>&#8358; 1000</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="check__item">
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Name</h6>
+                                                <p>Sarah Kent</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Ticket ID</h6>
+                                                <p>234RD2</p>
+                                            </div>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Price</h6>
+                                                <p>&#8358; 1000</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="check__item">
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Name</h6>
+                                                <p>Sarah Kent</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Ticket ID</h6>
+                                                <p>234RD2</p>
+                                            </div>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Price</h6>
+                                                <p>&#8358; 1000</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="check__item">
+                                        <div class="check__item--content">
+                                            <i class="event__optionBtn check-option-btn fa fa-ellipsis-v"></i>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Name</h6>
+                                                <p>Sarah Kent</p>
+                                            </div>
+                                            <div class="col-md-2 check__item--grid">
+                                                <h6>Ticket ID</h6>
+                                                <p>234RD2</p>
+                                            </div>
+                                            <div class="col-md-3 check__item--grid">
+                                                <h6>Price</h6>
+                                                <p>&#8358; 1000</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </main>
+
+                    </div>
+
+                    <div class="tabcontent" id="tab-6">
+
+                        <header class="header">
+                            <div class="header__title">
+                                <h1>Polls</h1>
+                                <a href="#popup1" class="Btn Btn-primary header__Btn dropdown-toggle"
+                                    data-aos="zoom-out" data-aos-delay="250">&#43;
+                                    Polls</a>
+
+                            </div>
+                        </header>
+
+
+
+                        <main>
+
+
+                        </main>
+
+                    </div>
+
+                </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+
+
+
+
+    </section>
+    </main>
+
+    </div>
+
+
+    <script src="java/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+.section-content {
+    @include clearfix;
+    margin-top: 3rem; 
+    width: 100%;   
+}
+
+
+.event {
+    height: 50rem;
+
+    &-box {
+        width: 100%;
+        height: 32rem;
+        position: relative;
+        float: left;
+        left: 0;
+
+        @include respond(tab-land) {
+            height: 25rem;
+        }
+
+        @include respond(tab-port) {
+            float: none;
+            top: 3rem;
+            height: 22rem;
+        }
+    }
+
+    &__item {
+        width: 48%;
+        height: 100%;
+        float: left;
+        left: 0;
+        border-radius: 5px;
+        padding: 3rem;
+        margin-bottom: 2rem;
+        background-color: $color-primary-dark-0;
+
+        @include respond(phone) {
+            float: none;
+            width: 100%;
+
+            &:first-child {
+                margin-right: 0;
+            }
+        }
+
+        &:first-child {
+            margin-right: 4%;
+        }
+
+        &-content {
+            float: left;
+            left: 0;
+            width: 66%;
+            height: 100%;
+
+
+            &:first-child {
+                margin-right: 4%;
+            }
+
+            &-img {
+                width: 30%;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        &__context {
+            width: 100%;
+            height: 50%;
+
+            @include respond(tab-land) {
+                &:nth-child(2) {
+                    margin-top: -2rem;
+                }
+            }
+
+            &-info {
+                position: relative;
+                top: 2rem;
+
+                @include respond(tab-land) {
+                    top: 0;
+                }
+
+                & h6 {
+                    color: $color-grey-light;
+                }
+
+                & h3 {
+                    color: $color-white;
+                    font-weight: normal;
+
+                    @include respond(tab-land) {
+                        font-size: 1.3rem;
+                    }
+                }
+
+                & p {
+                    color: $color-grey-light;
+                    line-height: 2;
+                    padding: .5rem;
+
+                    @include respond(tab-land) {
+                        line-height: 1.2;
+                        padding: 0;
+                        margin-bottom: 1rem;
+
+                    }
+
+                    &>i {
+                        font-size: 1.2rem;
+                        margin-right: .5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &__optionBtn {
+        position: absolute;
+        right: -2rem;
+        top: -2rem;
+        cursor: pointer;
+        font-size: 1.8rem;
+        color: $color-grey-light;
+    }
+
+    &__description {
+        position: relative;
+
+        & p {
+            color: $color-grey-light;
+            line-height: 2;
+            width: 85%;
+            text-align: justify;
+            padding-top: 2rem;
+
+            @include respond(tab-land) {
+                font-size: .7rem;
+                line-height: 1.5;
+            }
+
+            @include respond(tab-port) {
+                line-height: 1.3;
+                padding-top: 3.5rem;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.payment {
+    & .header__dropdown-box {
+        height: 55rem !important;
+
+        @include respond(tab-port) {
+            height: 50rem !important;
+        }
+    }
+
+    & .check__item {
+        @include respond(phone) {
+            width: 28rem !important;
+            height: 32rem !important;
+
+            &--grid {
+                margin-bottom: -.5rem !important;
+            }
+        }
+
+        @include respond(tab-port) {
+            height: 35rem;
+
+            &--grid {
+                margin-bottom: -1rem;
+            }
+        }
+    }
+
+    & .header__form--select {
+        width: 100%;
+    }
+
+    & .header__form--title--1 {
+        position: relative;
+        float: right;
+        right: 0;
+        width: 93.5% !important;
+
+        @include respond(tab-port) {
+            width: 100% !important;
+        }
+    }
+
+    & .input__append {
+        float: left;
+        left: 0;
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        border-top-left-radius: .5rem !important;
+        border-bottom-left-radius: .5rem !important;
+        background-color: #f1f1f1 !important; 
+        color: $color-primary-dark-0 !important;
+    }
+}

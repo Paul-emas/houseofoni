@@ -1,0 +1,28 @@
+.login-box__caption {
+
+    & h1 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: $color-primary-dark-0;
+    }
+
+    & p {
+        font-size: 1.1rem;
+    }
+}
+
+.login-box__email {
+    color: $color-grey-light;
+    font-size: 1.05rem;
+}
+
+.form__input-container-input {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.form__submit-btn {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+}

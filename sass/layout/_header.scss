@@ -1,0 +1,377 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: 5rem;
+
+    @media screen and (max-width: 765px) {
+        top: 5rem;   
+    }
+
+    &__title {
+        position: relative;
+        top: 1rem;
+
+        & h1 {
+            margin-left: 2rem;
+            color: $color-white;
+            font-weight: 300;
+        }
+
+        &>a {
+            color: $color-white !important;
+            text-decoration: none;
+        }
+    }
+
+    &__Btn {
+        position: absolute;
+        top: 0;
+        left: 15rem;
+        padding: 1rem 2rem 1rem 2rem;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__dropdown {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        -webkit-transition: opacity .5s, visibility 0s linear .5s;
+        transition: opacity .5s, visibility 0s linear .5s;
+        opacity: 0;
+        visibility: hidden;
+        height: 100%;
+        background-color: rgba($color-black, .7);
+        z-index: 10;
+
+        &:target {
+            visibility: visible;
+            opacity: 1;
+            /* cancel visibility transition delay */
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+
+        &-box {
+            width: 40%;
+            height: 65rem;
+            background-color: $color-white;
+            border-radius: 5px;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            z-index: 12;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 .2rem 5rem rgba($color-primary-dark-0, .5);
+            overflow: visible;
+
+            @include respond(phone) {
+                width: 280px;
+                height: 55rem;
+            }
+
+            @include respond(tab-land) {            
+                height: 55rem;
+            }
+
+            &-content {
+                position: relative;
+                top: 2rem;
+                margin: 0 auto;
+                width: 90%;
+                height: 90%;
+                overflow: visible;
+                
+                @include respond(tab-port) {
+                    width: 100%;
+                }
+
+                & h3 {
+                    padding-top: 2rem;
+                    text-align: center;
+                    font-weight: 700;
+                }
+            }
+        }
+
+    }
+
+    &__details {
+        height: 100%;
+
+        &-grid {
+            padding: 1rem;        
+            margin-bottom: 2rem;
+
+            @include clearfix;
+
+            @include respond(tab-port) {
+                margin-bottom: 1rem;
+            }
+
+            &--0 {
+                height: 11%;
+
+            }
+
+            &--1 {
+                height: 18%;
+                margin-top: -2rem;
+
+                @include respond(tab-land) {
+                    display: none;
+                }
+            }
+
+            &--2 {
+                height: 10%; 
+                margin-top: -2rem;               
+            }
+
+            &--3 {                
+
+                @include respond(phone) {
+                    margin-left: 0;
+                }
+            }    
+            
+            
+
+
+            &--title {
+                color: $color-grey-dark;
+                text-transform: uppercase;
+                font-size: 1rem;                
+            }
+
+            &--data {
+                float: left;
+                left: 0;
+                // ;
+
+                @include respond(tab-port) {
+                    margin-right: .2rem;
+                    width: 45%;
+                }
+
+                @include respond(tab-port) {
+                    margin-bottom: .5rem;
+                    margin-right: 1.1rem;
+                    width: 45% !important;
+                }
+            }
+        }
+    }
+
+    &__form {
+        padding: 1rem;
+        border-radius: 3px;
+        border: 1px solid $color-primary;
+        outline: none;
+        transition: all .2s;
+
+        &:placeholder-shown {
+            border: 1px solid #d6d5d5;
+        }
+
+        &--select {
+            padding: 1rem;
+            outline: none;
+            border-radius: 3px;
+            border: 1px solid #d6d5d5;
+
+            &:hover {
+                border: 1px solid $color-primary;
+            }
+        }
+
+        &--title {
+            width: 100%;
+
+            &--1 {
+                width: 86%;
+
+                @include respond(tab-port) {
+                    width: 100%;
+                }
+            }
+
+            &--2 {
+                width: 130%;
+
+                @include respond(tab-port) {
+                    width: 100%;
+                }
+            }
+        }
+
+        &::placeholder {
+            padding-left: .3rem;
+            color: $color-black;
+        }
+    }
+
+    &__caption {
+        position: absolute;
+        bottom: -2.5rem;
+        width: 100%;
+        width: 80%;
+        left: 3.5rem;
+        font-size: .85rem;
+
+        @include respond(tab-land) {
+            bottom: -3.5rem;
+        } 
+    
+        @include respond(phone) {
+            margin-left: -1rem;
+            bottom: -2.5rem;
+        }
+
+        & p {
+            color: $color-grey-light-0;
+            text-align: justify;
+            text-align: center;
+
+            @include respond(phone) {
+                font-size: .7rem;
+            }
+                    
+            &>i {
+                padding: .35rem;
+                font-size: .5rem;
+                margin-right: .5rem;
+                margin-top: -.2rem;
+                color: $color-white;
+                border-radius: 50%;
+                background-color: #049b04;
+            }
+        }
+    }
+
+    &__upload {
+        position: relative;
+        margin-top: 1rem;
+        padding: 0;
+
+        & {
+            p {
+                padding: 1rem;
+                color: $color-grey-light-0;
+
+                & i {
+                    color: $color-primary;
+                    padding: .7rem;
+                    font-size: 1rem;
+                    background-color: #eee;
+                    margin-right: .5rem;
+                }
+
+                & span {
+                    font-size: .8rem;
+                    color: $color-black;
+                    margin-left: 1rem;
+                }
+            }
+
+            &--btn {
+                position: absolute;
+                top: 1rem;
+                right: 0;            
+                padding: .6rem 2rem .6rem 2rem;
+                background-color: $color-primary;
+                border: none;
+                color: $color-white;
+                border-radius: 3px;
+                font-size: .9rem;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    &__textarea {
+        width: 100%;
+        border-radius: 3px;
+        height: 90%;
+        padding: .5rem;
+
+        @include respond(tab-land) {
+            height: 50%;
+        }
+
+        &:focus {
+            outline: none;
+            border-color: $color-primary;
+            transition: all .2s;
+        }
+    }
+
+    &__createBtn {
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+
+        @include respond(tab-land) {
+            margin-top: 2rem;
+        }
+    }
+}
+
+.form__box {
+    position: relative;
+}
+
+
+.input__append {
+    position: absolute;
+    width: 35px;
+    height: 36.5px;
+    text-align: center;
+    line-height: 35px;
+    top: 0;
+    float: right;
+    right: -.2rem;
+    z-index: 1;
+    border-radius: 0 3px 3px 0;
+    background-color: $color-primary;
+
+    @include respond(tab-port) {
+        display: none;
+    }
+
+}
+
+
+.header__form:placeholder-shown~.input__append {
+    color: $color-primary;
+    background-color: #eee;
+    transition: all .2s;
+}
+
+.close {
+    color: $color-black !important;
+    position: absolute;
+}
+
+.popup-close {
+    position: absolute;
+    top: 2rem;
+    float: right;
+    height: 30px;
+    right: 3rem;
+    font-size: 1.5rem;
+    z-index: 200;
+
+    &>a {
+        color: $color-black;
+
+        &:hover {
+            color: #ff0000;
+        }
+    }
+}

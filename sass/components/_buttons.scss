@@ -1,0 +1,40 @@
+.Btn {
+    border: none;
+    color: $color-white;
+    border-radius: 5px;
+    transition: all .3s;
+    text-decoration: none !important;
+    text-transform: uppercase;    
+    
+    &:hover {
+        transform: translateY(-.3rem);     
+        color: $color-white;   
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:active {
+        transform: translateY(.2rem);        
+    }
+    
+
+    &-primary {
+        background-color: $color-primary;
+
+        &--1 {
+            margin-left: 5rem;
+        }
+
+        &:hover {
+            box-shadow: 0 .2rem 1rem $color-primary-dark-0;
+        }
+
+        &-light {
+           &:hover {
+            box-shadow: 0 .2rem 1rem #adadad;
+           }
+        }
+    }
+}

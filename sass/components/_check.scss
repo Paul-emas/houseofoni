@@ -1,0 +1,211 @@
+.check {
+    position: relative;
+    width: 100%;
+
+    @include clearfix;
+
+    @include respond(tab-port) {
+        top: 3rem;
+    }
+
+    &__dropdown {
+
+        &--btn {
+            width: 100%;
+            height: 3.5rem;
+            margin-top: 2rem;
+
+            @media screen and (max-width: 765px) {
+                margin-top: -2rem;
+            }
+        }
+
+        &-box {
+            width: 30rem !important;
+            height: 45rem !important;
+            border-radius: .6rem !important;
+
+            @include respond(phone) {
+                width: 28rem !important;
+              }
+        }
+
+        &-detail {
+            position: relative; 
+            top: 3rem;
+            width: 90%;
+            margin: 0 auto;
+            height: 75%;
+            
+
+            @include clearfix;
+
+            & .row {
+                
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                height: 100%;
+
+                & p {
+                    color: $color-grey-light-0;
+                }
+
+                & h4 {
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    color: $color-primary-dark;
+                }
+
+                & .col-md-6 {
+                    
+                    float: left;
+                    left: 0;
+                    height: 2rem;
+                    text-align: justify;
+                    padding: .5rem;
+                    margin-top: 1rem;
+                    margin-bottom: 2rem;
+                    
+                    @include respond(tab-port) {
+                        margin-bottom: 1rem;                        
+                        
+                      }
+
+                    & i {
+                        margin-right: .5rem;                
+                    }
+                }
+
+                & .QR-box {                                                
+                    width: 100%;
+                    height: 6rem;
+                    margin-bottom: 2rem;
+                    
+
+                    @include clearfix;
+
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                & h3 {
+                    font-size: 1.6rem;
+                }
+
+                & .tracker-box {
+
+                    & > p {
+                        font-size: .8rem;
+                    }
+
+                    & > p > span {
+                        font-weight: 700;
+                        font-size: 1rem;
+                        color: $color-primary-dark;
+                    }
+                }
+            }
+        }
+    }
+
+    &-out {
+
+        &-btn {
+            padding: 1rem 3rem 1rem 3rem;
+            position: relative;
+            top: 1.5rem;
+            left: 50%;
+
+            @include respond(tab-port) {
+                left: 0;
+                top: 1rem;
+            }
+        }
+    }
+
+    &-option {
+
+        &-btn {
+            margin-top: 4rem;
+            margin-right: 3rem;
+            z-index: 2;
+
+            @include respond(tab-land) {
+                margin-right: 1.5rem;
+                margin-top: 4.5rem;
+            }
+        }
+    }
+
+    &__item {
+        width: 100%;
+        height: 9rem;
+        background-color: $color-primary-dark-0;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+        overflow: hidden;
+
+
+        &--1 {
+            @include respond(tab-port) {
+                height: 18rem !important;
+            }
+        }
+
+        @include respond(tab-port) {
+            height: 28rem;
+        }
+
+        &--content {
+            position: relative;
+            top: 1.6rem;
+            width: 95%;
+            padding: 1rem;
+            height: 70%;
+            margin: 0 auto;                              
+            
+            @include respond(tab-port) {
+                width: 85%;
+                top: 2rem;
+            }
+        }
+
+        &--grid {
+            float: left;
+            left: 0;
+            height: 100%;     
+            
+            &--1 {
+                margin-bottom: 2rem !important;
+            }
+
+            @include respond(tab-port) {
+                float: none;
+                height: 30%;
+                margin-bottom: 1rem;
+            }
+            
+
+            & h6 {
+                color: $color-grey-light;
+                margin-bottom: 1rem;
+                font-size: .9rem;
+            }
+
+            & p {
+                color: $color-white;
+                font-size: 1.2rem;
+                font-weight: 500;
+                
+            }
+        }
+    }
+}
+
+.section-content__check  {
+    position: relative;
+    top: 3rem;
+}
